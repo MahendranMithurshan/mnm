@@ -40,7 +40,7 @@ window.addEventListener("load", getData);
 
 function getData(){
 	fetch("directory.json")
-	.then(response=>.json()
+	.then(response=>response.json()
 	.then(data=> processData(data)));
 }
 
